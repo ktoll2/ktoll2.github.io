@@ -18,7 +18,7 @@ jobs:
     - run: |
           git config --global user.email 'github-actions@github.com'
           git config --global user.name 'github-actions'
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/ktoll2/ktoll2.github.io.git
+          git remote set-url origin https://${{ secrets.githubrunnerpat }}@github.com/ktoll2/ktoll2.github.io.git
           CI=false && yarn deploy
 
 
